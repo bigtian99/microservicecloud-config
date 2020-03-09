@@ -13,7 +13,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql:///clouddb03?serverTimezone=UTC
+    url: jdbc:mysql:///clouddb01?serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource
 mybatis-plus:
   mapper-locations: classpath:mapperxml/*.xml
@@ -31,7 +31,7 @@ info:
   build.version: $project.version$
 ---
 server:
-  port: 8001
+  port: 8763
 spring: 
    profiles: test
    application: 
